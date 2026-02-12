@@ -1,10 +1,8 @@
 <?php
-include 'db.php';
-if(isset($_GET['id'])){
-    $id = $_GET['id'];
-    $sql = "DELETE FROM `Basic-Table` WHERE id = $id";
-    if(mysqli_query($conn, $sql)){
-        header("Location: data-table.php?msg=deleted");
-    }
+include('db.php');
+$id = $_GET['id'];
+$query = "DELETE FROM your_table_name WHERE id = $id";
+if(mysqli_query($conn, $query)) {
+    header("Location: admin_panel/table-data.php?msg=deleted");
 }
 ?>
