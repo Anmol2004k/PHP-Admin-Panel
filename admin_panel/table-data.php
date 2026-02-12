@@ -1,4 +1,4 @@
-<?php include 'db.php'; ?>
+<?php include '../db.php'; ?>
 
 
 <!-- meta tags and other links -->

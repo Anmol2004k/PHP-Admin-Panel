@@ -1,5 +1,12 @@
 <?php
-$conn = mysqli_connect("localhost", "root", " ", "dashboard_db");
+$host = "127.0.0.1:3307"; // Localhost ki wjha s main error aaya tha 😂😂
+$user = "root";
+$pass = ""; 
+$db   = "dashboard_db";
+
+// Connection line
+$conn = mysqli_connect($host, $user, $pass, $db);
+
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
