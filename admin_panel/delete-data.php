@@ -6,3 +6,7 @@ if(mysqli_query($conn, $query)) {
     header("Location: admin_panel/table-data.php?msg=deleted");
 }
 ?>
+
+
+
+ 
