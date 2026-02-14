@@ -1,5 +1,5 @@
 <?php
-$host = "127.0.0.1:3307"; // Localhost ki wjha s main error aaya tha 😂😂
+$host = "localhost:3307"; // Localhost ki wjha s main error aaya tha 😂😂
 $user = "root";
 $pass = ""; 
 $db   = "dashboard_db";
