@@ -1095,6 +1095,7 @@
       <div class="card-header">
         <h5 class="card-title mb-0">Default Datatables</h5>
       </div>
+      <a href="add-data.php" class="btn btn-primary mb-3">+ Add New Invoice</a>
       <div class="card-body">
         <table class="table bordered-table mb-0" id="dataTable" data-page-length='10'>
           <thead>
@@ -1119,7 +1120,7 @@
         
     <?php
     
-    $sql = "SELECT * FROM `basic-table` ORDER BY id DESC"; 
+    $sql = "SELECT * FROM `basic-table` ORDER BY id ASC"; 
     $result = mysqli_query($conn, $sql);
     
     if ($result && mysqli_num_rows($result) > 0) {
